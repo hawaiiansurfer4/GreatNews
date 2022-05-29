@@ -17,7 +17,9 @@
 		C45B364E2842F5DE00DB00B6 /* GreatNewsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45B364D2842F5DE00DB00B6 /* GreatNewsUITestsLaunchTests.swift */; };
 		C45B365C2842F87200DB00B6 /* NewsListTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45B365B2842F87200DB00B6 /* NewsListTableVC.swift */; };
 		C45B365F2842FBC700DB00B6 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45B365E2842FBC700DB00B6 /* WebService.swift */; };
-		C45B36622843CFFE00DB00B6 /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45B36612843CFFE00DB00B6 /* ArticleModel.swift */; };
+		C45B36622843CFFE00DB00B6 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45B36612843CFFE00DB00B6 /* Article.swift */; };
+		C45B36652843F34A00DB00B6 /* ArticlesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45B36642843F34900DB00B6 /* ArticlesViewModel.swift */; };
+		C45B36682844043B00DB00B6 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45B36672844043B00DB00B6 /* ArticleTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +54,9 @@
 		C45B364D2842F5DE00DB00B6 /* GreatNewsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreatNewsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C45B365B2842F87200DB00B6 /* NewsListTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListTableVC.swift; sourceTree = "<group>"; };
 		C45B365E2842FBC700DB00B6 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
-		C45B36612843CFFE00DB00B6 /* ArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
+		C45B36612843CFFE00DB00B6 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		C45B36642843F34900DB00B6 /* ArticlesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesViewModel.swift; sourceTree = "<group>"; };
+		C45B36672844043B00DB00B6 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 		C45B36292842F5DA00DB00B6 /* GreatNews */ = {
 			isa = PBXGroup;
 			children = (
+				C45B3666284403FF00DB00B6 /* Cells */,
+				C45B36632843F2EE00DB00B6 /* View Model */,
 				C45B36602843CFC000DB00B6 /* Model */,
 				C45B365D2842FB8C00DB00B6 /* Services */,
 				C45B365A2842F85100DB00B6 /* Controllers */,
@@ -152,9 +158,25 @@
 		C45B36602843CFC000DB00B6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C45B36612843CFFE00DB00B6 /* ArticleModel.swift */,
+				C45B36612843CFFE00DB00B6 /* Article.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		C45B36632843F2EE00DB00B6 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				C45B36642843F34900DB00B6 /* ArticlesViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		C45B3666284403FF00DB00B6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C45B36672844043B00DB00B6 /* ArticleTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,10 +311,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C45B362B2842F5DA00DB00B6 /* AppDelegate.swift in Sources */,
-				C45B36622843CFFE00DB00B6 /* ArticleModel.swift in Sources */,
+				C45B36622843CFFE00DB00B6 /* Article.swift in Sources */,
 				C45B365C2842F87200DB00B6 /* NewsListTableVC.swift in Sources */,
 				C45B365F2842FBC700DB00B6 /* WebService.swift in Sources */,
 				C45B362D2842F5DA00DB00B6 /* SceneDelegate.swift in Sources */,
+				C45B36682844043B00DB00B6 /* ArticleTableViewCell.swift in Sources */,
+				C45B36652843F34A00DB00B6 /* ArticlesViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
